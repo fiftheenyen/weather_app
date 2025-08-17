@@ -70,35 +70,40 @@ class WeatherScreen extends StatelessWidget {
             ),
             const SizedBox(height: 14),
             SingleChildScrollView(scrollDirection: Axis.horizontal),
-            Row(
-              children: [
-                Card(
-                  elevation: 6,
-                  child: Container(
-                    width: 100,
-                    padding: const EdgeInsets.all(8.0),
-                    child: Column(
-                      children: [
-                        Text(
-                          '09:00',
-                          style: TextStyle(
-                            fontSize: 16,
-                            fontWeight: FontWeight.w800,
-                          ),
-                        ),
-                        const SizedBox(height: 6),
-                        Icon(Icons.cloud, size: 40),
-                        const SizedBox(height: 6),
-                        Text('301.00', style: TextStyle(fontSize: 14)),
-                      ],
-                    ),
-                  ),
-                ),
+            Row(children: [
+                
               ],
             ),
             //additional information
             const SizedBox(height: 20),
             const Placeholder(fallbackHeight: 150),
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+class HourlyForecastItem extends StatelessWidget {
+  const HourlyForecastItem({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Card(
+      elevation: 6,
+      child: Container(
+        width: 100,
+        padding: const EdgeInsets.all(8.0),
+        child: Column(
+          children: [
+            Text(
+              '09:00',
+              style: TextStyle(fontSize: 16, fontWeight: FontWeight.w800),
+            ),
+            const SizedBox(height: 6),
+            Icon(Icons.cloud, size: 40),
+            const SizedBox(height: 6),
+            Text('301.00', style: TextStyle(fontSize: 14)),
           ],
         ),
       ),
