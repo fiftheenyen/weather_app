@@ -94,9 +94,21 @@ class WeatherScreen extends StatelessWidget {
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
-                AdditionalInfoItem(),
-                AdditionalInfoItem(),
-                AdditionalInfoItem(),
+                AdditionalInfoItem(
+                  icon: Icons.water_drop,
+                  label: 'Humidity',
+                  value: '95',
+                ),
+                AdditionalInfoItem(
+                  icon: Icons.sunny,
+                  label: 'Humidity',
+                  value: '15',
+                ),
+                AdditionalInfoItem(
+                  icon: Icons.water_drop,
+                  label: 'Humidity',
+                  value: '68',
+                ),
               ],
             ),
           ],
