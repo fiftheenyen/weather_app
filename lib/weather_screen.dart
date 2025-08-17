@@ -90,14 +90,15 @@ class WeatherScreen extends StatelessWidget {
               'Additional Information',
               style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
             ),
+            const SizedBox(height: 20),
             Row(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
                 AdditionalInfoItem(),
                 AdditionalInfoItem(),
                 AdditionalInfoItem(),
               ],
             ),
-            const Placeholder(fallbackHeight: 150),
           ],
         ),
       ),
