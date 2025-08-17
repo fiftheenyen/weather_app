@@ -29,16 +29,23 @@ class WeatherScreen extends StatelessWidget {
             SizedBox(
               width: double.infinity,
               child: Card(
-                child: Column(
-                  children: [
-                    Text(
-                      '300 ° K',
-                      style: TextStyle(
-                        fontSize: 32,
-                        fontWeight: FontWeight.bold,
+                child: Padding(
+                  padding: const EdgeInsets.all(16.0),
+                  child: Column(
+                    children: [
+                      Text(
+                        '300 ° K',
+                        style: TextStyle(
+                          fontSize: 32,
+                          fontWeight: FontWeight.bold,
+                        ),
                       ),
-                    ),
-                  ],
+                      const SizedBox(height: 10),
+                      Icon(Icons.cloud, size: 80),
+                      const SizedBox(height: 10),
+                      Text('Rain', style: TextStyle(fontSize: 18)),
+                    ],
+                  ),
                 ),
               ),
             ),
