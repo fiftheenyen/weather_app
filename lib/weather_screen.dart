@@ -69,10 +69,18 @@ class WeatherScreen extends StatelessWidget {
               style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
             ),
             const SizedBox(height: 14),
-            SingleChildScrollView(scrollDirection: Axis.horizontal),
-            Row(children: [
-                
-              ],
+
+            SingleChildScrollView(
+              scrollDirection: Axis.horizontal,
+              child: Row(
+                children: [
+                  HourlyForecastItem(),
+                  HourlyForecastItem(),
+                  HourlyForecastItem(),
+                  HourlyForecastItem(),
+                  HourlyForecastItem(),
+                ],
+              ),
             ),
             //additional information
             const SizedBox(height: 20),
